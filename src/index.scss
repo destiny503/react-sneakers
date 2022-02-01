@@ -6,7 +6,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-sgitmoothing: grayscale;
-    background-color: #e6f6ff;
+    background-color: #e7f6ff;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #eaeaea;
 
     img {
         margin-right: 15px;
@@ -44,10 +44,10 @@ header {
 
     .clear {
         position: absolute;
-        right: 13px;
+        right: 15px;
         width: 18px;
         height: 18px;
-        top: 13px;
+        top: 14px;
     }
 
     input {
@@ -58,67 +58,33 @@ header {
     }
 }
 
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.drawer {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 420px;
-    height: 100%;
-    right: 0;
-    background: #ffffff;
-    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    // transform: translateX(100%);
-    // transition: transform 0.3s ease-out;
-
-    .items {
-        flex: 1;
-        overflow: auto;
-        margin-bottom: 40px;
-    }
-
-    h2 {
-        margin: 0;
-    }
-}
-
 .cartEmpty {
     text-align: center;
-  
+
     p {
-      width: 280px;
-      line-height: 24px;
+        width: 280px;
+        line-height: 24px;
     }
-  
+
     .greenButton {
-      width: 245px;
-      margin-top: 20px;
-  
-      &:hover {
-        img {
-          transform: rotate(180deg) translateX(3px);
+        width: 245px;
+        margin-top: 20px;
+
+        &:hover {
+            img {
+                transform: rotate(180deg) translateX(3px);
+            }
         }
-      }
-  
-      img {
-        position: relative;
-        top: 1px;
-        transform: rotate(180deg);
-        margin-right: 15px;
-        transition: transform 0.15s ease-in-out;
-      }
+
+        img {
+            position: relative;
+            top: 1px;
+            transform: rotate(180deg);
+            margin-right: 15px;
+            transition: transform 0.15s ease-in-out;
+        }
     }
-  }
+}
 
 .cartTotalBlock {
     ul {
@@ -145,21 +111,20 @@ header {
         position: relative;
 
         &:disabled {
-            animation: button-loading 0.2s ease-in-out;
+            animation: button-loading 0.6s ease-in-out infinite;
         }
 
         &:hover {
-
             img {
                 transform: translateX(5px);
             }
         }
-        
+
         img {
             position: absolute;
             right: 30px;
             top: 20px;
-            transition: transform 0.6s ease-in-out infinite;
+            transition: transform 0.15s ease-in-out;
         }
     }
 }
@@ -174,9 +139,8 @@ header {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s ease-in-out;
+    transition: background 0.1s ease-in-out;
 
-    
     &:disabled {
         background-color: #bebebe !important;
         cursor: default;

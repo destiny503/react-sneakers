@@ -11,8 +11,8 @@ function Home({ items, isLoading, searchValue, setSearchValue, onChangeSearchInp
                 : filtredItems).map((item, index) =>
                     <Card
                         key={index}
-                        onPlus={(item) => onAddToCart(item)}
-                        onFavorite={(item) => onAddToFavorite(item)}
+                        onPlus={(obj) => onAddToCart(obj)}
+                        onFavorite={(obj) => onAddToFavorite(obj)}
                         loading={isLoading}
                         {...item}
                     />)
@@ -23,8 +23,8 @@ function Home({ items, isLoading, searchValue, setSearchValue, onChangeSearchInp
             <div className="d-flex align-center justify-between mb-40">
                 <h1>{searchValue ? `Поиск по запосу: "${searchValue}"` : "Все кроссовки"}</h1>
                 <div className="search-block d-flex">
-                    <img src="/img/search.svg" alt="Search" />
-                    {searchValue && <img onClick={() => setSearchValue("")} className="clear cu-p" src="/img/btn-remove.svg" alt="Clear" />}
+                    <img src="img/search.svg" alt="Search" />
+                    {searchValue && <img onClick={() => setSearchValue("")} className="clear cu-p" src="img/btn-remove.svg" alt="Clear" />}
                     <input onChange={onChangeSearchInput} value={searchValue} placeholder="Поиск..." />
                 </div>
             </div>

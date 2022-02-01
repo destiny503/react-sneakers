@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import AppContext from '../context';
 
 function Favorites() {
-    const {favorites, onAddToFavorite} = React.useContext(AppContext)
+    const { favorites, onAddToFavorite } = React.useContext(AppContext)
 
     return (
         <div className="content p-40">
@@ -17,9 +17,6 @@ function Favorites() {
                         favorited={true}
                         onFavorite={onAddToFavorite}
                         {...item} />)
-                    // items
-                    //     ? 
-                    //     : 'Клад на ул.Ленина напротив Пятёрочки прикоп 5см.'
                 }
             </div>
         </div>
