@@ -4,7 +4,7 @@
   "author": "Artur Rakhmatullin",
   "license": "ISC",
   "private": true,
-
+  "homepage": "https://tsartsartsar.github.io/react-sneakers",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
