@@ -19,8 +19,8 @@ function Home({ items, isLoading, searchValue, setSearchValue, onChangeSearchInp
     }
 
     return (
-        <div className="content p-40">
-            <div className="d-flex flex-wrap align-center justify-between mb-40">
+        <div className="content p-40 justify-center">
+            <div className="content-inner d-flex flex-wrap align-center justify-between mb-40">
                 <h1>{searchValue ? `Поиск по запосу: "${searchValue}"` : "Все кроссовки"}</h1>
                 <div className="search-block d-flex">
                     <img src="img/search.svg" alt="Search" />
@@ -29,7 +29,7 @@ function Home({ items, isLoading, searchValue, setSearchValue, onChangeSearchInp
                 </div>
             </div>
 
-            <div className="d-flex flex-wrap">
+            <div className="content-inner d-flex flex-wrap">
                 {renderItems()}
             </div>
         </div>
