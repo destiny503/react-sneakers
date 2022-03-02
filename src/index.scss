@@ -14,7 +14,11 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
     max-width: 1080px;
+    min-width: 350px;
     margin: 50px auto;
+    @media screen and (max-width: 555px) {
+        margin: 20px auto;
+    }
 }
 
 header {
@@ -28,6 +32,13 @@ header {
     p {
         margin: 0;
     }
+
+    p, span {
+        @media screen and (max-width: 555px) {
+            display: none;
+        }
+    }
+
 }
 
 .content {
@@ -41,6 +52,9 @@ header {
     border-radius: 10px;
     padding: 0 15px;
     position: relative;
+    @media screen and (max-width: 566px) {
+        margin-top: 20px;
+    }
 
     .clear {
         position: absolute;
