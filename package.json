@@ -4,12 +4,12 @@
   "author": "Artur Rakhmatullin",
   "license": "ISC",
   "private": true,
+  "homepage": "https://tsartsartsar.github.io/react-sneakers",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.25.0",
-    "gh-pages": "^3.2.3",
     "macro-css": "^1.0.5",
     "node-sass": "^4.14.1",
     "react": "^17.0.2",
@@ -44,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
