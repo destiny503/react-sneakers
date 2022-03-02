@@ -9,7 +9,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/react-sneakers'>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
