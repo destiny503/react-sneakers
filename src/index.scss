@@ -16,7 +16,7 @@ body {
     max-width: 1080px;
     min-width: 351px;
     margin: 50px auto;
-    @media screen and (max-width: 555px) {
+    @media screen and (max-width: 520px) {
         margin: 20px auto;
     }
 }
@@ -35,12 +35,12 @@ header {
     }
 
     p, span {
-        @media screen and (max-width: 555px) {
+        @media screen and (max-width: 587px) {
             display: none;
         }
     }
 
-    @media screen and (max-width: 555px) {
+    @media screen and (max-width: 587px) {
         padding: 20px;
     }
 
@@ -53,7 +53,7 @@ header {
     }
 
     .content-inner {
-        @media screen and (max-width: 580px) {
+        @media screen and (max-width: 520px) {
             justify-content: center;
         }
     }
@@ -62,9 +62,11 @@ header {
 .search-block {
     border: 1px solid #f3f3f3;
     border-radius: 10px;
+    margin-left: 20px;
     padding: 0 15px;
     position: relative;
-    @media screen and (max-width: 567px) {
+    @media screen and (max-width: 587px) {
+        margin-left: 0px;
         margin-top: 20px;
     }
 
@@ -84,31 +86,25 @@ header {
     }
 }
 
+.empty {
+    p {
+        text-align: center;
+    }
+}
+
+.orders {
+    @media screen and (max-width: 520px) {
+        justify-content: center;
+        margin-right: auto;
+    }
+}
+
 .cartEmpty {
     text-align: center;
 
     p {
         width: 280px;
         line-height: 24px;
-    }
-
-    .greenButton {
-        width: 245px;
-        margin-top: 20px;
-
-        &:hover {
-            img {
-                transform: rotate(180deg) translateX(3px);
-            }
-        }
-
-        img {
-            position: relative;
-            top: 1px;
-            transform: rotate(180deg);
-            margin-right: 15px;
-            transition: transform 0.15s ease-in-out;
-        }
     }
 }
 
@@ -174,10 +170,27 @@ header {
 
     &:hover {
         background: lighten(#9dd558, 5%);
+        img {
+            transform: rotate(180deg) translateX(3px);
+        }
     }
 
     &:active {
         background: darken(#9dd558, 5%);
+    }
+}
+
+.greenButtonEmpty {
+    @extend .greenButton;
+    width: 245px;
+    margin-top: 20px;
+
+    img {
+        position: relative;
+        top: 1px;
+        transform: rotate(180deg);
+        margin-right: 15px;
+        transition: transform 0.15s ease-in-out;
     }
 }
 

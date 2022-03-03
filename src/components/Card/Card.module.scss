@@ -7,6 +7,10 @@
     margin-bottom: 30px;
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 
+    @media screen and (max-width: 520px) {
+        margin-right: 0;
+    }
+
     .plus {
         cursor: pointer;
     }
