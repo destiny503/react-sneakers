@@ -3,4 +3,4 @@
 Технологии:
 ReactJS (Router 6, Context, хуки), SCSS, Mock API
 
-[Открыть](https://tsartsartsar.github.io/react-sneakers/)
+[Открыть](https://destiny503.github.io/react-sneakers/)
